@@ -82,7 +82,7 @@ https://cdn.discordapp.com/attachments/1135292607589777518/1137837030647287858/2
 #### CRUD (CREATE,READ,UPDATE,DELETE) -> Astonauts (Astronautas) 👨‍🚀
 
 ```http
-  GET /api/astronauts
+  GET http://localhost:3000/api/astronauts
 ```
 
 |  Description                |
@@ -92,7 +92,7 @@ https://cdn.discordapp.com/attachments/1135292607589777518/1137837030647287858/2
 #### Get item
 
 ```http
- POST /api/astronauts
+ POST http://localhost:3000/api/astronauts
 ```
 
 | Parameter | Type     | Description                       |
@@ -101,7 +101,7 @@ https://cdn.discordapp.com/attachments/1135292607589777518/1137837030647287858/2
 
 
 ```http
- PUT /api/astronauts/${id}
+ PUT http://localhost:3000/api/astronauts/${id}
 ```
 
 | Parameter | Type     | Description                       |
@@ -110,7 +110,7 @@ https://cdn.discordapp.com/attachments/1135292607589777518/1137837030647287858/2
 
 
 ```http
- DELETE /api/astronauts/${id}
+ DELETE http://localhost:3000/api/astronauts/${id}
 ```
 
 | Parameter | Type     | Description                       |
@@ -121,7 +121,7 @@ https://cdn.discordapp.com/attachments/1135292607589777518/1137837030647287858/2
 #### CRUD (CREATE,READ,UPDATE,DELETE) -> Missiones (Missions) 🚀
 
 ```http
-  GET /api/missions
+  GET http://localhost:3000/api/missions
 ```
 
 |  Description                |
@@ -131,7 +131,7 @@ https://cdn.discordapp.com/attachments/1135292607589777518/1137837030647287858/2
 #### Get item
 
 ```http
- POST /api/missions
+ POST http://localhost:3000/api/missions
 ```
 
 | Parameter | Type     | Description                       |
@@ -140,7 +140,7 @@ https://cdn.discordapp.com/attachments/1135292607589777518/1137837030647287858/2
 
 
 ```http
- PUT /api/missions/${id}
+ PUT http://localhost:3000/api/missions/${id}
 ```
 
 | Parameter | Type     | Description                       |
@@ -149,7 +149,7 @@ https://cdn.discordapp.com/attachments/1135292607589777518/1137837030647287858/2
 
 
 ```http
- DELETE /api/missions/${id}
+ DELETE http://localhost:3000/api/missions/${id}
 ```
 
 | Parameter | Type     | Description                       |
