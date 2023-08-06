@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: nasa-front
+    ports:
+      - "3015:3015"
+    volumes:
+      - ./frontend/app/src:/app/src
+      - ./frontend/app/public:/app/public
+      - ./frontend/app/package.json:/app/package.json
+      - ./frontend/app/index.html:/app/index.html
+
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: api-nasa-mision
+    ports:
+      - "3000:3000"
+    networks:
+      - my-network
+    restart: always
+
+  db:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27018:27017"    
+    networks:
+      - my-network
+    volumes:
+          - mongodb_data:/data/db
+
+networks: #here
+        my-network:
+            driver: bridge
+
+volumes:
+  mongodb_data:
+      

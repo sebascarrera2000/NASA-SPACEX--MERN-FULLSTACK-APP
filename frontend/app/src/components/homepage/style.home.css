@@ -1,0 +1,242 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    
+    font-size: 15px;
+    
+    /* Primary */
+    --var-soft-blue: hsl(215, 51%, 70%);
+    --var-cyan: hsl(178, 100%, 50%);
+    /* Neutral */
+    --var-main-darkest: hsl(217, 54%, 11%);
+    --var-card-dark: hsl(216, 50%, 16%);
+    --var-line-dark: hsl(215, 32%, 27%);
+    --var-lightest: white;
+    
+    /* Fonts */
+    
+    --var-heading: normal normal 600 1.5em/1.6em 'Outfit', sans-serif;
+    
+    --var-small-heading: normal normal 400 1em/1em 'Outfit', sans-serif;
+    
+    --var-para: normal normal 300 1em/1.55em 'Outfit', sans-serif;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+
+
+.cardAPD h1 {
+    font: var(--var-heading);
+    color: var(--var-lightest);
+    padding: 1.2em 0;
+}
+
+.cardAPD  h2 {
+    font: var(--var-small-heading);
+    color: var(--var-lightest);
+    /* padding on .coin-base */
+}
+
+.cardAPD   p {
+    font: var(--var-para);
+    color: var(--var-soft-blue);
+}
+
+.cardAPD .planet-card span {
+    color: white;
+}
+
+.cardAPD img {
+    height: 40%;
+    width: 40%;
+}
+
+
+
+.planet-gallery h1 {
+    font: var(--var-heading);
+    color: var(--var-lightest);
+    padding: 1.2em 0;
+}
+
+.planet-gallery  h2 {
+    font: var(--var-small-heading);
+    color: var(--var-lightest);
+    /* padding on .coin-base */
+}
+
+.planet-gallery   p {
+    font: var(--var-para);
+    color: var(--var-soft-blue);
+}
+
+ .planet-card span {
+    color: white;
+}
+
+.planet-card img {
+    height: 40%;
+    width: 40%;
+}
+
+.cardAPD {
+    max-width: 50%;
+    margin: 1em ;
+    background-color: var(--var-card-dark);
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+.containerpage
+{
+   display: flex;
+}
+
+.planet-gallery {
+    max-width: 50%;
+    margin: 1em ;
+    background-color: var(--var-card-dark);
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+
+div.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-attribute {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0.5em;
+    padding: 1em 0;
+    padding-bottom: 1.5em;
+    border-top: 2px solid var(--var-line-dark);
+    gap: 10px;
+}
+
+a.hero-image-container {
+    position: relative;
+    display: block;
+}
+
+
+.hero-image img.eye {
+    position: absolute;
+    width: 100%;
+    max-width: 2em;
+    top: 44%;
+    left: 43%;
+}
+
+@media (min-width:400px) {
+  .hero-image image .eye {
+    max-width: 3em;
+}
+}
+
+.hero-image-container::after {
+    content: '';
+    background-image: url("https://i.postimg.cc/9MtT4GZY/view.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-color: hsla(178, 100%, 50%, 0.3);
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.hero-image-container:hover::after {
+  opacity: 1;
+}
+
+
+div.attribution {
+    margin: 0 auto;
+    width: 100%;
+    font: var(--var-para);
+    text-align: center;
+    padding: 1.5em 0 4em 0;
+    color: var(--var-line-dark);
+    margin: 5px;
+}
+.attribution a {
+    color: var(--var-soft-blue);
+}
+
+
+
+
+/* CSS */
+.button-set {
+  align-items: center;
+  background-image: linear-gradient(90deg, rgb(17, 78, 131) 0%, rgb(61, 31, 110) 35%, rgb(13, 59, 119) 100%);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-set:active,
+.button-set:hover {
+  outline: 0;
+}
+
+.button-set span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-set:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-set {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+@media (min-width:600px) {
+    body {
+        font-size: 18px;
+    }
+}

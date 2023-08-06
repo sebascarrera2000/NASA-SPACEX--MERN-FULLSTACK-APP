@@ -1,0 +1,62 @@
+{
+  "name": "api-nasa-mision",
+  "version": "1.0.0",
+  "description": "Api Mission nasa-Sebastian carrera -Esclab",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "node dist/main.js",
+    "start:dev": "tsnd --respawn src/main.ts",
+    "test": "npm run test:unit",
+    "test:unit": "NODE_ENV=test jest --coverage",
+    "lint": "eslint --ignore-path .gitignore . --ext .js,.ts",
+    "lint:fix": "npm run lint -- --fix",
+    "build:clean": "rimraf dist; exit 0",
+    "build:tsc": "tsc -p tsconfig.prod.json"
+  },
+  "author": "sebascarrera200@gmnail.com",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.3.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@types/compression": "^1.7.2",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.15",
+    "@types/jest": "^29.2.5",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "del": "^4.1.1",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "jest": "^29.3.1",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3",
+    "rimraf": "^4.0.4",
+    "ts-jest": "^29.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  },
+  "lint-staged": {
+    "*.(js|ts)": [
+      "npm run lint:fix"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "class-validator": "^0.14.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.1"
+  }
+}

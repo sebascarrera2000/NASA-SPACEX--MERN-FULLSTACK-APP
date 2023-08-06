@@ -1,0 +1,232 @@
+
+.container-all{
+    display: flex;
+    width: 50%;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-all h1{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    
+}
+.containermision {
+    width:fit-content ;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+.containerastronaut {
+    width:fit-content ;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+.containermisionastronaut {
+    width:fit-content ;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  /* Responsive Table Style */
+  .responsive-table {
+    background-color: #fefefe;
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    margin: 1rem ;
+    overflow: hidden;
+    color: black;
+    font-size: 1rem;
+    
+  }
+  .responsive-table__row {
+    display: grid;
+    border-bottom: 1px solid #edeef2;
+    
+  }
+  @media (min-width: 768px) {
+    .responsive-table__row {
+      grid-template-columns: 2fr 1fr 2fr 2fr 1fr;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .responsive-table__row {
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+  }
+  .responsive-table__row th,
+  .responsive-table__row td {
+    padding: 1rem;
+  }
+  .responsive-table__head {
+    background-color: #29335c;
+    color: #edeef2;
+  }
+  @media (max-width: 991px) {
+    .responsive-table__head {
+      display: none;
+    }
+  }
+  .responsive-table__head__title {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .responsive-table__body .responsive-table__row {
+    transition: 0.1s linear;
+    transition-property: color, background;
+  }
+  .responsive-table__body .responsive-table__row:last-child {
+    border-bottom: none;
+  }
+  .responsive-table__body .responsive-table__row:hover {
+    color: white;
+    background-color:#29335c;
+  }
+  .responsive-table__body__text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .responsive-table__body__text::before {
+    margin-right: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  @media (max-width: 991px) {
+    .responsive-table__body__text::before {
+      content: attr(data-title) ;
+    }
+  }
+  @media (max-width: 400px) {
+    .responsive-table__body__text::before {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (min-width: 400px) {
+    .container-all {
+        flex-wrap: wrap;
+    }
+  }
+  .responsive-table__body__text--name {
+    font-weight: 600;
+  }
+  @media (min-width: 768px) {
+    .responsive-table__body__text--name::before {
+      display: none;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .responsive-table__body__text--name {
+      grid-column: 1/2;
+      flex-direction: column;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+     .responsive-table__body__text--types, .responsive-table__body__text--update {
+      grid-column: 2/3;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .responsive-table__body__text--country {
+      grid-column: 3/-1;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .responsive-table__body__text--name, .responsive-table__body__text--country {
+      grid-row: 2;
+    }
+    
+  }
+
+ input , select{
+    border: 2px solid #29335c;
+    width: 100%;
+    background-color: #edeef2;
+    height: 100%;
+    padding:.5em.5em ;
+    border-radius: 10px;
+    color: black;
+  }
+  
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thanks{
+    width: 40%;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 5%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.all{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:max-content;
+    margin: 0;
+    background-image: url("https://media.discordapp.net/attachments/1135292607589777518/1137571562116091985/805180.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+.all-thanks{
+  display: flex;
+  align-items: center; 
+  justify-content:center ;
+  flex-wrap: wrap;
+
+
+}
+
+.imigt{
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.imgt img{
+  padding-top: 10%;
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+
+}
+
+.thankstext h1{
+  text-align: center;
+  padding-bottom: 0.4rem;
+}
+
+.thankstext{
+  margin: 1%;
+  padding-top: 1.5rem;
+  margin-bottom: 2%;
+
+}
+
+.thankstext p{
+  padding: 0.2rem;
+  font-family:'Poppins', sans-serif ;
+  color: black;
+  text-align: center;
+  font-style: italic;
+}
